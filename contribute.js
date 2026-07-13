@@ -175,8 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function resetUploadForm() {
-        const sourceUpload = document.getElementById('source-upload');
-        if (sourceUpload) sourceUpload.checked = true;
+        document.getElementById('source-upload').checked = true;
         canvasSourceMode = 'upload';
         uploadPanel.style.display   = 'block';
         existingPanel.style.display = 'none';
@@ -194,8 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         existingResults.innerHTML            = '';
         existingSelectedBanner.style.display = 'none';
 
-        const typeSong = document.getElementById('type-song');
-        if (typeSong) typeSong.checked = true;
+        document.getElementById('type-song').checked = true;
 
         songEntriesList.innerHTML = '';
         addSongEntry();
